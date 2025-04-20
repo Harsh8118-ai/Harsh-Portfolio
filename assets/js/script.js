@@ -159,7 +159,18 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 
-// ScreenShot API 
+document.getElementById('resume').addEventListener('click', () => {
+  const resumeUrl = 'Projects/Resume.pdf';
+
+  const downloadLink = document.createElement('a');
+  downloadLink.href = resumeUrl;
+  downloadLink.download = 'Harsh_Resume.pdf';
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
+});
+
+
 
 
                        
