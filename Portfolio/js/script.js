@@ -170,7 +170,7 @@ document.getElementById('resume').addEventListener('click', () => {
   document.body.removeChild(downloadLink);
 });
 
-
+lucide.createIcons();
 
 
                        

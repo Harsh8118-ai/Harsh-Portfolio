@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Harsh's Portfolio</title>
+
+  <link rel="shortcut icon" href="images/Profile.jpg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="images/Profile.jpg" class="avatar-box" alt="Harsh Tyagi" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Harsh Tyagi">Harsh Tyagi</h1>
+
+          <p class="title">MERN Stack Developer</p>
+          <p class="title" id="resume"
+            style="display: flex; align-items: center; margin-top: 3px; color: #d61e1e; cursor: pointer;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            <span>
+              &nbsp;Resume
+            </span>
+          </p>
+
+
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:tygaih7654321@gmail.com" class="contact-link">tygaih7654321@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+917668718283" class="contact-link">+91 76687 18283</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">July 12, 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sec-52, Noida, U.P, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/harsh8118/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Harsh8118-ai" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            <strong>I'm a Full Stack Developer</strong> from Noida, India, passionate about building
+            <strong>scalable</strong> and
+            <strong>user-friendly</strong> web applications. With expertise in <strong>React.js, Tailwind CSS</strong>,
+            and
+            <strong>Backend development</strong>, I specialize in creating <em>clean, elegant, and
+              performance-driven</em> digital experiences.
+          </p>
+
+          <p>
+            My goal is to develop <strong>intuitive and visually appealing</strong> websites that not only function
+            seamlessly
+            but also leave a <em>lasting impression</em>. From <strong>frontend aesthetics</strong> to <strong>backend
+              efficiency</strong>,
+            I ensure that every project aligns with both user needs and business objectives. I have built web and mobile
+            applications,
+            contributed to <strong>real-world projects</strong>, and worked on brands like
+            <strong>SilkenGlamour</strong>.
+          </p>
+        </section>
+
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm Doing</h3>
+
+          <ul class="service-list">
+
+            <!-- Frontend Development -->
+            <li class="service-item">
+              <div class="service-icon-box">
+                <i class="fas fa-laptop-code fa-2x" style="color: #d61e1e"></i>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Frontend Development</h4>
+                <p class="service-item-text">
+                  Crafting responsive, user-friendly interfaces using modern HTML, CSS, and JavaScript frameworks.
+                </p>
+              </div>
+            </li>
+
+            <!-- Backend Development -->
+            <li class="service-item">
+              <div class="service-icon-box">
+                <i class="fas fa-server fa-2x" style="color: #d61e1e"></i>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend Development</h4>
+                <p class="service-item-text">
+                  Building robust APIs, managing databases, and handling server-side logic with performance in mind.
+                </p>
+              </div>
+            </li>
+
+            <!-- Fullstack Development -->
+            <li class="service-item">
+              <div class="service-icon-box">
+                <i class="fas fa-layer-group fa-2x" style="color: #d61e1e"></i>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Fullstack Development</h4>
+                <p class="service-item-text">
+                  Delivering complete end-to-end web solutions from frontend UI to backend infrastructure.
+                </p>
+              </div>
+            </li>
+
+            <!-- Problem Solver -->
+            <li class="service-item">
+              <div class="service-icon-box">
+                <i class="fas fa-lightbulb fa-2x" style="color: #d61e1e"></i>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Problem Solver</h4>
+                <p class="service-item-text">
+                  Tackling complex issues with clear thinking, debugging efficiently, and delivering scalable solutions.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+      </article>
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <div class="timeline-container">
+
+          <!-- EDUCATION  -->
+          <section class="timeline">
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+
+              <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">M.S. Heritage School</h4>
+                <span>2008 — 2021</span>
+
+              </li>
+
+              <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title"> IIMT Engineering College </h4>
+                <span>2021 — 2025</span>
+
+
+
+              </li>
+
+            </ol>
+
+          </section>
+
+          <!-- EXPERIENCE -->
+          <section class="timeline">
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+
+              <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Liveupx Pvt. Ltd </h4>
+                <span>Web Developer</span>
+
+              </li>
+
+              <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Silken Glamour</h4>
+
+                <span>MERN Stack Developer</span>
+
+              </li>
+            </ol>
+
+          </section>
+        </div>
+
+        <!-- SKILLS  -->
+        <section class="skill">
+          <h2 class="custom-skill-title">My Skills</h2>
+
+          <div class="content-card">
+            <div class="skills-category">
+              <h4>Programming Languages</h4>
+              <ul class="skills-list-custom">
+                <li><i class="fab fa-js-square"></i> JavaScript</li>
+                <li><i class="fab fa-python"></i> Python</li>
+                <li><i class="fas fa-code"></i> C++</li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <h4>Frontend Development</h4>
+              <ul class="skills-list-custom">
+                <li><i class="fab fa-html5"></i> HTML</li>
+                <li><i class="fab fa-css3-alt"></i> CSS</li>
+                <li><i class="fab fa-react"></i> React.js</li>
+                <li><i class="fas fa-wind"></i> Tailwind CSS</li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <h4>Backend Development</h4>
+              <ul class="skills-list-custom">
+                <li><i class="fab fa-node"></i> Node.js</li>
+                <li><i class="fas fa-server"></i> Express.js</li>
+                <li><i class="fas fa-database"></i> MongoDB</li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <h4>DevOps & Hosting</h4>
+              <ul class="skills-list-custom">
+                <li><i class="fas fa-cloud-upload-alt"></i> Web Hosting</li>
+                <li><i class="fas fa-network-wired"></i> VPS</li>
+                <li><i class="fas fa-server"></i> Nginx</li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <h4>Problem Solving & CS Fundamentals</h4>
+              <ul class="skills-list-custom">
+                <li><i class="fas fa-brain"></i> Data Structures</li>
+                <li><i class="fas fa-lightbulb"></i> Problem Solving</li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <h4>Tools & Platforms</h4>
+              <ul class="skills-list-custom">
+                <li><i class="fab fa-git-alt"></i> Git</li>
+                <li><i class="fab fa-github"></i> GitHub</li>
+                <li><i class="fas fa-envelope-open-text"></i> Postman</li>
+                <li><i class="fas fa-robot"></i> ChatGPT</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+
+      <!--
+       -- #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Portfolio</button>
+            </li>
+
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Portfolio</button>
+              </li>
+
+              
+
+              <li class="select-item">
+                <button data-select-item>Web Development</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+
+            <!-- Project 1: SilkenGlamour -->
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://www.silkenglamour.com/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <picture>
+                    <!-- Mobile View -->
+                    <source media="(max-width: 768px)" src="Projects/SilkenGlamour.png" type="image/webp">
+
+                    <!-- Desktop View -->
+                    <img src="Projects/SilkenGlamour.png" alt="SilkenGlamour" loading="lazy">
+                  </picture>
+                </figure>
+
+                <h3 class="project-title">Home Salon Service</h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+
+            <!-- Project 2: Your Portfolio -->
+            <li class="project-item active" data-filter-item data-category="portfolio">
+              <a href="https://svtyagi.netlify.app/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <picture>
+                    <!-- Mobile View -->
+                    <source media="(max-width: 768px)" src="Projects/SVTyagiPortfolio.png" type="image/webp">
+
+                    <!-- Desktop View -->
+                    <img src="Projects/SVTyagiPortfolio.png" alt="Portfolio" loading="lazy">
+                  </picture>
+                </figure>
+
+                <h3 class="project-title">Portfolio - 1</h3>
+                <p class="project-category">Portfolios</p>
+              </a>
+            </li>
+
+            <!-- Project 3: Ask Agora -->
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://aksagora.netlify.app/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <picture>
+                    <!-- Mobile View -->
+                    <source media="(max-width: 768px)" src="Projects/AskAgora.png" type="image/webp">
+
+                    <!-- Desktop View -->
+                    <img src="Projects/AskAgora.png" alt="Ask Agora" loading="lazy">
+                  </picture>
+                </figure>
+
+                <h3 class="project-title">Ask Agora</h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+
+           
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #CONTACT
+      -->
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13730434.109864123!2d66.81577220500421!3d21.402505947277643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce581544de087%3A0x4a872e3db9540cb3!2sSector%2052%20Noida!5e0!3m2!1sen!2sin!4v1734332312375!5m2!1sen!2sin"
+              width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form name="contact" method="POST" netlify action="thankyou.html" class="form">
+
+
+            <input type="hidden" name="form-name" value="contact" />
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+        </section>
+      </article>
+    </div>
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

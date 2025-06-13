@@ -773,7 +773,31 @@ main {
  * education and experience 
  */
 
-.timeline { margin-bottom: 30px; }
+ /* Optional responsive support */
+@media (max-width: 768px) {
+  .timeline-container {
+    flex-direction: column;
+  }
+
+  .timeline {
+    flex: 1 1 100%;
+  }
+}
+
+.timeline-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.timeline {
+  flex: 1 1 45%;
+  margin-bottom: 30px;
+  background-color: #111; /* Optional: contrast separation */
+  padding: 1rem;
+  border-radius: 8px;
+}
 
 .timeline .title-wrapper {
   display: flex;
@@ -1927,3 +1951,55 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: #d61e1e;
 }
 
+.custom-skills-section {
+  padding: 2rem;
+  background: #111;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #222;
+}
+
+.custom-skill-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.skills-category {
+  margin-bottom: 1.5rem;
+}
+
+.skills-category h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #ddd;
+}
+
+.skills-list-custom {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skills-list-custom li {
+  background-color: #1e1e1e;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #e0e0e0;
+  border: 1px solid #333;
+  transition: background 0.3s ease;
+}
+
+.skills-list-custom li i {
+  color: rgb(214, 30, 30);;
+}
+
+.skills-list-custom li:hover {
+  background-color: #2a2a2a;
+}
